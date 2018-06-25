@@ -10,7 +10,7 @@ function moveDodgerLeft() {
     }
   }
 
- 
+
 function moveDodgerRight() {
     var rightNumbers = dodger.style.right.replace ('px', '')
     var right = parseInt (rightNumbers, 10)
@@ -22,7 +22,7 @@ function moveDodgerRight() {
 
 document.addEventListener('keydown', function(e) {
 if (e.which === 37) {
-  moveDodgerLeft() 
+  moveDodgerLeft()
  }
  else (e.which === 39) {
    moveDodgeRight ()
