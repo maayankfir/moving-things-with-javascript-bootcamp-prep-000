@@ -9,7 +9,12 @@ function moveDodgerLeft() {
   if(left > 0) {
     dodger.style.left = `${left - 1}px`
     }
+    document.addEventListener('keydown', function(e) {
+    if (e.which === 37) {
+      moveDodgerLeft()
+     }
   }
+}
 
 function moveDodgerRight() {
     var rightNumbers = dodger.style.right.replace('px', '')
@@ -18,13 +23,10 @@ function moveDodgerRight() {
     if (right < 360) {
       dodger.style.right = '${right -1}px'
     }
-  }
-
-document.addEventListener('keydown', function(e) {
-if (e.which === 37) {
-  moveDodgerLeft()
- }
- else if (e.which === 39) {
-   moveDodgeRight ()
-  }
-})
+  
+  document.addEventListener('keydown', function(e) {
+  if (e.which === 39) {
+    moveDodgerRight()
+   }
+ })
+}
