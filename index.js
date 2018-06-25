@@ -29,4 +29,4 @@ if (e.which === 37) {
  else if (e.which === 39) {
    moveDodgeRight ()
   }
-}
+} )
